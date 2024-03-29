@@ -1,0 +1,20 @@
+version: '3.5'
+services:
+  openvpn:
+    container_name: openvpn
+    image: my-openvpn:latest
+    restart: always
+    cap_add:
+      - NET_ADMIN      
+    ports:
+      - 1194:1194/udp
+    volumes:
+      - ./openvpn:/etc/openvpn
+    networks:
+      openvpn:
+    logging:
+      options:
+        max-size: 100M
+
+networks:
+  openvpn:
