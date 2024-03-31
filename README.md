@@ -30,7 +30,15 @@ vim openvpn/openvpn.conf
 mv docker-compose.yml docker-compose.old
 cp docker-compose.vol docker-compose.yml
 ````
+Run compose again and you're good to go
 
+````
+docker-compose up -d
+````
+Check logs to debug:
+````
+docker-compose logs -f --tail=100
+````
 
 
 
