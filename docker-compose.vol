@@ -11,7 +11,7 @@ services:
     ports:
       - 1194:1194/udp
     volumes:
-      -./openvpn:/etc/openvpn
+      - ./openvpn:/etc/openvpn
     networks:
       openvpn:
     logging:
@@ -20,3 +20,4 @@ services:
 
 networks:
   openvpn:
+
