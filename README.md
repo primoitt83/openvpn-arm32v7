@@ -2,9 +2,9 @@
 
 Inspired by:
 
-https://github.com/hbiyik/FFmpeg
+https://github.com/monstrenyatko/docker-openvpn-server
 
-https://github.com/jjm2473/ffmpeg-rk
+https://github.com/kylemanna/docker-openvpn
 
 Requires:
  - docker
@@ -47,13 +47,13 @@ cd openvpn/pki
 chmod +x ovpn.sh
 sh ovpn.sh client mydomain.ddns.net:1190 > client.ovpn
 
+````
 As:
 type of file to gen: client
 your domain: mydomain.ddns.net
 openvpn port: 1190
 some name to file: client.ovpn
 
-````
 Copy client.ovpn and test your brand new vpn.
 
 ````
